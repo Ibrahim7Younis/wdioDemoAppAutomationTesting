@@ -1,7 +1,7 @@
 {
   "platformName": "Android",
   "appium:platformVersion": "12",
-  "appium:deviceName": "e2736c2a0720",
+  "appium:deviceName": "",
   "appium:appPackage": "com.wdiodemoapp",
   "appium:appActivity": "com.wdiodemoapp.MainActivity",
   "appium:autoGrantPermissions": false
