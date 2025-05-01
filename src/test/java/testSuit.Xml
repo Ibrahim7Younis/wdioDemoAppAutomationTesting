@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="FoodicsSuite" parallel="false">
+    <test name="FoodicsTest" preserve-order="true">
+        <classes>
+            <class name="wdioDemoTest.LoginTest"/>
+            <class name="wdioDemoTest.FormsTest"/>
+            <class name="wdioDemoTest.SwipeTest"/>
+        </classes>
+    </test>
+</suite>
