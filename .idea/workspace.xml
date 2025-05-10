@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c6ddc32-fa29-4a89-bc42-f172969736fe" name="Changes" comment="updated .gitIgnore">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wdioDemoApp/utils/PropertiesFilesHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wdioDemoApp/utils/PropertiesFilesHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,29 +43,29 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.WdioDemoAppAutomation [clean].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.BaseTest.executor": "Run",
-    "TestNG.BaseTest.test.executor": "Run",
-    "TestNG.C:/Users/ibrahem.mohammed/IdeaProjects/wdioDemoApp/src/test/java/testSuit.Xml.executor": "Run",
-    "TestNG.FormsTest.executor": "Run",
-    "TestNG.LoginTest.executor": "Run",
-    "TestNG.LoginTest.signUpTest.executor": "Run",
-    "TestNG.LoginTest.testInvalidLogin.executor": "Run",
-    "TestNG.LoginTest.validLogin.executor": "Run",
-    "TestNG.SwipeTest.executor": "Run",
-    "TestNG.swagLabsTest.LoginTest,CheckBiometricLoginPopup and 1 more.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ibrahem.mohammed/IdeaProjects/wdioDemoApp",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.customizations"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.WdioDemoAppAutomation [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.BaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BaseTest.test.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/ibrahem.mohammed/IdeaProjects/wdioDemoApp/src/test/java/testSuit.Xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.FormsTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.signUpTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.testInvalidLogin.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.validLogin.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SwipeTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.swagLabsTest.LoginTest,CheckBiometricLoginPopup and 1 more.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ibrahem.mohammed/IdeaProjects/wdioDemoApp&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="wdioDemoApp.pages" />
@@ -203,7 +203,23 @@
       <option name="project" value="LOCAL" />
       <updated>1746143319479</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="updated .gitIgnore">
+      <option name="closed" value="true" />
+      <created>1746143831861</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746143831861</updated>
+    </task>
+    <task id="LOCAL-00004" summary="updated .gitIgnore">
+      <option name="closed" value="true" />
+      <created>1746143853898</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1746143853898</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">

@@ -11,7 +11,6 @@ public class PropertiesFilesHandler {
         Properties prop = new Properties();
         InputStream inputStream;
 
-
         try {
             inputStream = getClass().getClassLoader().getResourceAsStream(propFileName);
 
