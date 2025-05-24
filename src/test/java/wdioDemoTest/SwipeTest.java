@@ -21,4 +21,9 @@ public class SwipeTest extends BaseTest{
         // Verify that the supported videos text is displayed
         Assert.assertTrue(swipePage.isSupportedVideosDisplayed(), "The supported videos text is not displayed");
     }
+    @Test
+    public void ScrollToTextTest(){
+        swipePage.scrollToYouFoundMe();
+        Assert.assertTrue(swipePage.isYouFoundMeTextDisplayed(), "The You Found Me text is not displayed");
+    }
 }

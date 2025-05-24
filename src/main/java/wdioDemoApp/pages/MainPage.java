@@ -122,7 +122,7 @@ AndroidDriver driver;
 
     public void scrollDownToText(String text) {
         try {
-            AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().textContains(\"" + text + "\"))");
+            driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(textContains(\"" + text + "\"))"));
         } catch (TimeoutException e) {
             System.err.println("Text not found: " + text);
         }

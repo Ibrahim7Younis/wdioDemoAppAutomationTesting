@@ -70,7 +70,15 @@ public class SwipePage extends MainPage{
         }
     }
 
+    public void scrollToYouFoundMe() {
+        scrollDownToText("You found me!!!");
+    }
 
-
-
+    public boolean isYouFoundMeTextDisplayed() {
+        try {
+            return isElementDisplayed(AppiumBy.xpath("//android.widget.TextView[@text='You found me!!!']"));
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+    }
 }
