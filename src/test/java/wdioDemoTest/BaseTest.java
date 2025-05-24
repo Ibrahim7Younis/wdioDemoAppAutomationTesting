@@ -16,6 +16,8 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -38,7 +40,11 @@ public class BaseTest {
     @BeforeSuite
     public void setUpDriver() throws MalformedURLException {
         // Initialize the AndroidDriver with the Appium server URL and capabilities
-        driver = new AndroidDriver(new URL(appiumServer), setCaps());
+        try {
+            driver = new AndroidDriver(new URI(appiumServer).toURL(), setCaps());
+        } catch (URISyntaxException e) {
+            throw new RuntimeException(e);
+        }
     }
     @BeforeClass
     public void setUp() {

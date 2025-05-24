@@ -3,7 +3,6 @@ package wdioDemoApp.pages;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import wdioDemoApp.DataModels.LoginDM;
 
 
@@ -86,4 +85,12 @@ public class LoginPage extends MainPage {
         return isPasswordErrorMessageDisplayed();
     }
 
+    public void longPressOnSignupBtn() {
+        longPress(signUpForm);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

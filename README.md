@@ -68,14 +68,17 @@ src/
    ```
 
 2. Configure your environment:
+  - **install appium gestures**:
+ use the command: appium plugin install --source=npm appium-gestures-plugin
+  - **include appium gestures in start appium server command**:
+    appium --use-plugins=gestures
+  - **Device Capabilities**:  
+    Update your device name and platform version in  
+    `src/test/resources/configFiles/Caps.json`
 
-   - **Device Capabilities**:  
-     Update your device name and platform version in  
-     `src/test/resources/configFiles/Caps.json`
-
-   - **Appium Server URL**:  
-     Set your Appium server URL in  
-     `src/test/resources/configFiles/GeneralConfigs.properties`
+  - **Appium Server URL**:  
+    Set your Appium server URL in  
+    `src/test/resources/configFiles/GeneralConfigs.properties`
 
 ---
 

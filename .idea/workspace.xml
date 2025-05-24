@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c6ddc32-fa29-4a89-bc42-f172969736fe" name="Changes" comment="updated .gitIgnore">
+      <change afterPath="$PROJECT_DIR$/src/test/java/wdioDemoTest/gesturesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wdioDemoApp/utils/PropertiesFilesHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wdioDemoApp/utils/PropertiesFilesHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wdioDemoApp/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wdioDemoApp/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wdioDemoApp/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wdioDemoApp/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/wdioDemoTest/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/wdioDemoTest/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/configFiles/Caps.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/configFiles/Caps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/configFiles/GeneralConfigs.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/configFiles/GeneralConfigs.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,29 +48,30 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.WdioDemoAppAutomation [clean].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.BaseTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.BaseTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.C:/Users/ibrahem.mohammed/IdeaProjects/wdioDemoApp/src/test/java/testSuit.Xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.FormsTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginTest.signUpTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginTest.testInvalidLogin.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginTest.validLogin.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.SwipeTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.swagLabsTest.LoginTest,CheckBiometricLoginPopup and 1 more.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ibrahem.mohammed/IdeaProjects/wdioDemoApp&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.WdioDemoAppAutomation [clean].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.BaseTest.executor": "Run",
+    "TestNG.BaseTest.test.executor": "Run",
+    "TestNG.C:/Users/ibrahem.mohammed/IdeaProjects/wdioDemoApp/src/test/java/testSuit.Xml.executor": "Run",
+    "TestNG.FormsTest.executor": "Run",
+    "TestNG.LoginTest.executor": "Run",
+    "TestNG.LoginTest.signUpTest.executor": "Run",
+    "TestNG.LoginTest.testInvalidLogin.executor": "Run",
+    "TestNG.LoginTest.validLogin.executor": "Run",
+    "TestNG.SwipeTest.executor": "Run",
+    "TestNG.gesturesTest.longPressTest.executor": "Run",
+    "TestNG.swagLabsTest.LoginTest,CheckBiometricLoginPopup and 1 more.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ibrahem.mohammed/IdeaProjects/wdioDemoApp",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.customizations"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="wdioDemoApp.pages" />
@@ -75,7 +81,7 @@
       <recent name="C:\Users\ibrahem.mohammed\IdeaProjects\MyDemo\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/ibrahem.mohammed/IdeaProjects/wdioDemoApp/src/test/java/testSuit.Xml">
+  <component name="RunManager" selected="TestNG.gesturesTest.longPressTest">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="wdioDemoApp" />
       <method v="2">
@@ -133,24 +139,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.signUpTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="WdioDemoAppAutomation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="wdioDemoTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="wdioDemoTest" />
-      <option name="MAIN_CLASS_NAME" value="wdioDemoTest.LoginTest" />
-      <option name="METHOD_NAME" value="signUpTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SwipeTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WdioDemoAppAutomation" />
       <extension name="coverage">
@@ -168,13 +156,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="gesturesTest.longPressTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WdioDemoAppAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="wdioDemoTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="wdioDemoTest" />
+      <option name="MAIN_CLASS_NAME" value="wdioDemoTest.gesturesTest" />
+      <option name="METHOD_NAME" value="longPressTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.gesturesTest.longPressTest" />
         <item itemvalue="TestNG.C:/Users/ibrahem.mohammed/IdeaProjects/wdioDemoApp/src/test/java/testSuit.Xml" />
         <item itemvalue="TestNG.FormsTest" />
         <item itemvalue="TestNG.SwipeTest" />
         <item itemvalue="TestNG.LoginTest" />
-        <item itemvalue="TestNG.LoginTest.signUpTest" />
       </list>
     </recent_temporary>
   </component>

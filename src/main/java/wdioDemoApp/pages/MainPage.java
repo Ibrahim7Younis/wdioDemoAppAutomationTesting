@@ -9,12 +9,14 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.*;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import wdioDemoApp.constants.GeneralConstants;
 import wdioDemoApp.utils.PropertiesFilesHandler;
 
 import java.time.Duration;
+import java.util.Map;
 import java.util.Properties;
 
 public class MainPage {
@@ -109,6 +111,20 @@ AndroidDriver driver;
                     .perform();
         } catch (Exception e) {
             System.err.println("Error during left scroll: " + e.getMessage());
+        }
+    }
+
+    public void longPress(By locator) {
+        RemoteWebElement longPress = (RemoteWebElement) driver.findElement(locator);
+
+        driver.executeScript("gesture: longPress", Map.of("elementId", longPress.getId(), "pressure", 0.5, "duration", 1000));
+    }
+
+    public void scrollDownToText(String text) {
+        try {
+            AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().textContains(\"" + text + "\"))");
+        } catch (TimeoutException e) {
+            System.err.println("Text not found: " + text);
         }
     }
 
