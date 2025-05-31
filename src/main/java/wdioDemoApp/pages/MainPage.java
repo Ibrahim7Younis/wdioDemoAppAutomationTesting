@@ -5,19 +5,18 @@ import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
-import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.PointerInput;
+import org.openqa.selenium.interactions.Sequence;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import wdioDemoApp.constants.GeneralConstants;
-import wdioDemoApp.utils.PropertiesFilesHandler;
 
 import java.time.Duration;
+import java.util.List;
 import java.util.Map;
-import java.util.Properties;
 
 public class MainPage {
 AndroidDriver driver;
@@ -28,6 +27,7 @@ AndroidDriver driver;
     private final By loginPageBtn = AppiumBy.accessibilityId("Login");
     private final By formsPageBtn = AppiumBy.accessibilityId("Forms");
     private final By swipePageBtn = AppiumBy.accessibilityId("Swipe");
+    private final By dragPageBtn = AppiumBy.accessibilityId("Drag");
     // used xpath with the text to make it work with different android versions
     protected final By discardMessageBtn = AppiumBy.xpath("//android.widget.Button[@text='OK']");
 
@@ -42,6 +42,10 @@ AndroidDriver driver;
     public SwipePage clickOnSwipePageBtn(){
         clickElement(swipePageBtn);
         return new SwipePage(driver);
+    }
+    public DragAndDropPage clickOnDragAndDropPageBtn(){
+        clickElement(dragPageBtn);
+        return new DragAndDropPage(driver);
     }
 
 
@@ -126,6 +130,22 @@ AndroidDriver driver;
         } catch (TimeoutException e) {
             System.err.println("Text not found: " + text);
         }
+    }
+    public void dragAndDrop(WebElement source, WebElement target) {
+        PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
+        Sequence dragAndDrop = new Sequence(finger, 1);
+
+        // Press on source
+        dragAndDrop.addAction(finger.createPointerMove(Duration.ZERO, PointerInput.Origin.fromElement(source), 0, 0));
+        dragAndDrop.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
+
+        // Wait and move to target
+        dragAndDrop.addAction(finger.createPointerMove(Duration.ofMillis(500), PointerInput.Origin.fromElement( target), 0, 0));
+
+        // Release
+        dragAndDrop.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
+
+        driver.perform(List.of(dragAndDrop));
     }
 
 
