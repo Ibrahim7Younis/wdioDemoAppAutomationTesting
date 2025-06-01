@@ -17,12 +17,6 @@ public class DragAndDropTest extends BaseTest{
     }
     @Test
     public void DragAndDropAllElements(){
-        driver.pressKey(new KeyEvent(AndroidKey.BACK));
-        driver.pressKey(new KeyEvent(AndroidKey.HOME));
-        driver.pressKey(new KeyEvent(AndroidKey.ENTER));
-
-        driver.setClipboardText("Hello");
-        String text = driver.getClipboardText();
         dragAndDropPage.dragAndDropAll();
         Assert.assertTrue(dragAndDropPage.isCongratsMessageDisplayed(), "Not all elements were dragged and dropped");
     }
